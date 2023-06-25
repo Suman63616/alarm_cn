@@ -121,7 +121,7 @@
   }
 
   
-  /* style of devices of screen size less than 768px */
+  /* style of devices of screen size more than 600px */
   @media only screen and (min-width: 600px) {
     /* adding padding to container */
     .main-container {
@@ -131,6 +131,19 @@
         justify-content: center;
         border-radius: 50px;
         width: 450px;
+        min-height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .clock-container{
+        justify-content: center;
+        border-radius: 50px;
+        width: 350px;
         min-height: auto;
     }
   }
